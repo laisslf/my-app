@@ -3,7 +3,7 @@ import { searchHistoryAtom } from "@/store";
 import { useRouter } from "next/router";
 import { Card } from "react-bootstrap";
 import { ListGroup } from "react-bootstrap";
-import styles from '@/styles/History.module.css';
+import styles from '@/styles/history.module.css';
 import {Button} from "react-bootstrap";
 import { removeFromHistory } from "@/lib/userData";
 import { Fragment } from "react";
