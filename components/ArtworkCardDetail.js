@@ -15,7 +15,7 @@ export default function ArtworkCardDetail(props) {
     const [favoritesList, setFavoritesList] = useAtom(favoritesAtom);
     const [showAdded, setShowAdded] = useState(false);
     useEffect(()=>{
-        setShowAdded(favoritesList?.includes(props.objectID))
+        setShowAdded(favoritesList?.includes(props.objectID)) // eslint-disable-line react-hooks/exhaustive-deps
        }, [favoritesList])
        
     async function favoritesCLicked(){

@@ -19,16 +19,16 @@ export default function RouteGuard(props) {
         setSearchHistory(await getHistory());
     }
     useEffect(() => {
-        updateAtoms();
+        updateAtoms(); // eslint-disable-line react-hooks/exhaustive-deps
         // on initial load - run auth check
-        authCheck(router.pathname);
+        authCheck(router.pathname); // eslint-disable-line react-hooks/exhaustive-deps
     
         // on route change complete - run auth check
-        router.events.on('routeChangeComplete', authCheck);
+        router.events.on('routeChangeComplete', authCheck); // eslint-disable-line react-hooks/exhaustive-deps
     
         // unsubscribe from events in useEffect return function
         return () => {
-          router.events.off('routeChangeComplete', authCheck);
+          router.events.off('routeChangeComplete', authCheck); // eslint-disable-line react-hooks/exhaustive-deps
         };
       }, []);
     
