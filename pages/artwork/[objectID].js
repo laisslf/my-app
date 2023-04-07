@@ -4,11 +4,11 @@ import { useRouter } from "next/router";
 
 export default function objectID(props) {
     const router = useRouter();
-    const { objectID } = router.query;
+    const { id } = router.query;
     return(
         <Row>
             <Col>
-                <ArtworkCardDetail objectID={objectID} />
+                <ArtworkCardDetail objectID={id} />
             </Col>
         </Row>
     )
