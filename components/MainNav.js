@@ -36,7 +36,7 @@ export default function MainNav() {
       <>
         <Navbar expand="lg" expanded={isExpanded} bg="primary" variant="primary" className="fixed-top">
           <Container>              
-              <Navbar.Brand>Lais da Silva Lopes Furtado</Navbar.Brand>
+              <Navbar.Brand>Lais Furtado</Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={()=>{setIsExpanded(!isExpanded)}}/>
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">                           
